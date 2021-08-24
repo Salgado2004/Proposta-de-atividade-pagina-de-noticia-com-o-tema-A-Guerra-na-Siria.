@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+.cabeçalho{
+    background-color: #166B8C;
+    padding: 0px; /* Valor original era 15px ( mudado 06/07/2021 = ALTERAÇÕES MENU CSS*/
+}
+.nav-list{
+    display: flex; /* Serve pra deixar do lado o troço do site*/
+    align-items: left;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif; /*fontes de letra que peguei do video, pode ser qualquer uma*/
+    background-color: #66E4F2; /* valor original #FAA94D (Mudado ALTERAÇÃO MENU CSS 06/07/2021)*/
+    padding: 15px;
+}
+.nav-list li{
+    letter-spacing: 0.5px;
+    margin-left: 30px; /* dar um espaço legalzinho entre cada item da lista*/
+  }
+
+.nav-list a{
+    text-decoration: none;
+    color: black;
+}
+.nav-list a:hover{
+    color: white;
+}
+/*Cria a classe coluna que vai conter colunas menores*/
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Define o tamanho da coluna do lado */
+  .column.side {
+    float: right;
+    width: 25%;
+  }
+  /* Define o tamanho da coluna do meio */
+  .column.middle {
+    width: 70%;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column.middle p{
+    text-indent: 50px;
+    text-align: justify;
+}
+.column.middle ul{
+    max-width: 60%;
+}
+article{
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    width: 90%;
+    height: 250px;
+    box-shadow: 3px 3px 3px black;
+    transition: all 0.3s ease-out;
+  }
+  article:hover{
+    transform: translateY(-3px);
+  }
+  .nome_coluna {
+    margin-top: 5px;
+    text-align: center;
+    max-width: 40%;
+    font-family: Helvetica, Arial, sans-serif;  
+    font-size:smaller;
+  }
+  .descricao{
+    text-align: justify;
+    text-decoration: none;
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: small;
+  }
